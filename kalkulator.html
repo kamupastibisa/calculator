@@ -1,0 +1,46 @@
+<html>
+    <head></head>
+    <body>
+        
+            <label for="">Angka 1</label>
+            <input type="text" id="angka1">
+            <br>
+            <label for="">Angka 2</label>
+            <input type="text" id="angka2">
+            <br>
+            <br>
+            <label for="">hasil :</label>
+            <input type="text" id="hasil">
+            <br>
+            <br>
+            <button onclick="tambah()">+ Tambah</button>
+            <br>
+            <button onclick="kurang()">- Kurang</button>
+            <br>
+            <button onclick="kali()">* Kali</button>
+            <br>
+            <button onclick="bagi()">/ Bagi</button>
+            <br>
+            <button onclick="modulus()">% Sisa Bagi</button>
+        <script>
+            var angka1 = document.getElementById("angka1");
+            var angka2 = document.getElementById("angka2");
+            var hasil = document.getElementById("hasil");
+            function tambah(){
+                hasil.value = Number(angka1.value) + Number(angka2.value);
+            }
+            function kurang(){
+                hasil.value = Number(angka1.value) - Number(angka2.value);
+            }
+            function kali(){
+                hasil.value = Number(angka1.value) * Number(angka2.value);
+            }
+            function bagi(){
+                hasil.value = Number(angka1.value) / Number(angka2.value);
+            }
+            function modulus(){
+                hasil.value = Number(angka1.value) % Number(angka2.value);
+            }
+        </script>
+    </body>
+</html>
